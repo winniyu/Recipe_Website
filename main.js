@@ -1,7 +1,7 @@
 const MY_API_KEY = 'a8ff1c82b2b540f9b2324137e67a3ed4'
 
 async function fetchRandomQuote() {
-    const url = 'https://api.humorapi.com/jokes/create?topics=food&api-key=';
+    const url = 'https://api.humorapi.com/jokes/create?topics=food&api-key=f027f1321ed8408a8736595e063e83b9';
     const options = {
         method: 'GET',
         headers: {
