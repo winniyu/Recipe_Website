@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+@import url('https://assets.codepen.io/9632/RocherColorGX.woff2');
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2) format('woff2');
+}
+
+/* Body */
+body {
+    background-color: #ffffcc;
+}
+
+/* Main section */
+#startSection {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#startSection h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'Rocher', sans-serif;
+}
+
+#startSection img {
+    width: 600px;
+}
+
+/* Quote section */
+#quoteSection {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#quoteSection h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: rgb(101, 44, 20);
+    margin-top: 30px;
+}
+
+#quoteSection p {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    color: rgb(112, 50, 23);
+}
+
+/* Recipe Form */
+#recipeForm {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 475px;
+}
+
+#recipeForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#recipeForm input[type="text"],
+#recipeForm input[type="number"],
+#recipeForm select {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#recipeForm select {
+    cursor: pointer;
+}
+
+#recipeForm button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+#recipeForm button:hover {
+    background-color: #ffc700;
+    transform: scale(1.1); 
+}
+
+/* Recipe Result */
+#recipeResult {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.recipe h2 {
+    font-family: 'Rocher', sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    width: 50%;
+    border-radius: 5px;
+    border: 15px solid #6a3c13;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+/* Section Header */
+.section-header {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Rocher', sans-serif;
+}
+
+/* Ingredients and Equipment Lists */
+.ingredients-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.element-list {
+    width: 40%;
+}
+.ingredient-list{
+    margin-bottom: 25px;
+    width: 50%;
+    text-align: left;
+    margin-left: 475px;
+}
+
+.ingredient-list li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color:#6a3c13;
+    font-weight: bold;
+}
+
+.equipment-item {
+    margin-bottom: 10px;
+    color:#6a3c13;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-header-nutrient{
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Rocher', sans-serif;
+}
+
+/* Nutrient List */
+.nutrient-list {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.nutrient-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.nutrient-table th {
+    background-color: #ffc700;
+    padding: 8px;
+    text-align: center;
+}
+
+.nutrient-table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.nutrient-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* body{
+    background-color: #ffffcc;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2) format('woff2');
+}
+
+
+#startSection {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Rocher';
+}
+
+#startSection h1{
+    margin-bottom: 30px;
+    display: block;
+    font-size: 50px;
+}
+
+#startSection img {
+    display: inline-block;
+    width: 600px; 
+}
+
+#quoteSection{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#quoteSection h2{
+    font-family: 'Anton';
+    margin-top: 30px;
+    display: block;
+    font-size: 30px;
+    color: rgb(101, 44, 20);
+}
+
+#quoteSection p{
+    font-family: 'Brush Script MT';
+    font-size: 25px;
+    color: rgb(112, 50, 23);
+}
+
+
+
+#recipeForm {
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 32%;
+}
+
+#recipeForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#recipeForm input[type="text"],
+#recipeForm input[type="number"],
+#recipeForm select {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#recipeForm select {
+    cursor: pointer;
+}
+
+#recipeForm button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00; 
+    color: #333; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+#recipeForm button:hover {
+    background-color: #ffc700;
+    transform: scale(1.1); 
+}
+
+#recipeResult{
+    align-items: center;
+    text-align: center;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.recipe h2 {
+    font-family: 'Rocher', sans-serif;
+    width: 60%;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    border-radius: 5px;
+    border: 15px solid #6a3c13;
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-header {
+    font-family: 'Rocher', sans-serif;
+    font-size: 24px;
+}
+
+
+
+.ingredients-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.ingredient-list li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+.element-list{
+    display: inline-block;
+    vertical-align: top; 
+    text-align: center;
+    width: 40%;
+}
+
+
+.equipment-item {
+    margin-bottom: 10px;
+}
+
+.nutrient-list{
+    width: 70%
+}
+
+.nutrientList {
+    margin-top: 20px;
+}
+
+.nutrient-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+.nutrient-table th {
+    background-color: #ffc700;
+    padding: 8px;
+    text-align: left;
+
+.nutrient-table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.nutrient-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.section-header{
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Rocher', sans-serif;
+    font-size: 25px;
+}
+} */
